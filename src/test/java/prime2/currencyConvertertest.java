@@ -14,6 +14,7 @@ public class currencyConvertertest {
 
 	@BeforeEach
 	public void setup() {
+		System.out.println("dana ");
 		System.out.println("s etting up calculator instance for each test");
 		curr = new currencyConverter();
 	}
@@ -138,5 +139,8 @@ public class currencyConvertertest {
 		double rse = curr.convert(-1, "ILS", "ILS");
 		Assertions.assertEquals(-1, rse, "the convert must be -1");
 	}
+	
+
+  
 
 }
